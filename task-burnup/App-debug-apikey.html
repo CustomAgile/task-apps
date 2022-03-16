@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Burnup</title>
+    <script type="text/javascript">
+        var APP_BUILD_DATE = "Tue Jan 24 2017 06:38:12 GMT-0700 (MST)";
+    </script>
+    
+    <script type="text/javascript" src="https://rally1.rallydev.com/apps/2.1/sdk-debug.js?apiKey=_PUT_APIKEY_HERE_"></script>
+
+    <script type="text/javascript">
+        Rally.onReady(function() {
+            Rally.loadScripts(["src/javascript/utils/__ts-info-link.js","src/javascript/utils/__ts-logger.js","src/javascript/utils/burnup-calculator.js","src/javascript/utils/cumulative-flow-calculator.js","src/javascript/utils/inline-filter-control.js","src/javascript/utils/overrides.js","src/javascript/utils/utility.js","src/javascript/app.js"],
+	            function() {
+	                Rally.launchApp('task-burnup', {
+	                    name: 'Task Burnup'
+	                })
+	            }, true);
+        });
+    </script>
+<link rel="stylesheet" type="text/css" href="src/style/app.css">
+
+</head>
+<body></body>
+</html>

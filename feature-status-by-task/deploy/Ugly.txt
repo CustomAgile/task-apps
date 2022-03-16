@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feature Status by Task</title>
+    <!--  (c) 2016 CA Technologies.  All Rights Reserved. -->
+    <!--  Build Date: Fri Oct 21 2016 18:16:55 GMT-0600 (MDT) -->
+    
+    <script type="text/javascript">
+        var APP_BUILD_DATE = "Fri Oct 21 2016 18:16:55 GMT-0600 (MDT)";
+        var CHECKSUM = [%= checksum %];
+    </script>
+    
+    <script type="text/javascript" src="/apps/2.1/sdk.js"></script>
+
+    <script type="text/javascript">
+        Rally.onReady(function() {
+            
+            
+               Rally.launchApp('feature-status-by-task', {
+                   name: 'Feature Status by Task'
+               });
+        });
+    </script>
+    
+    <style type="text/css">
+
+.app {
+}
+.tsinfolink {
+    position:absolute;
+    right:0px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    background: #C0C0C0;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.remaining-container {
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+}
+
+.progress-bar-container {
+    white-space: nowrap;
+}
+
+.tslegend {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+}
+
+.tslegendtext {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
+    font-size: '14px'!important;
+    color: #274b6d;
+    display: inline
+}
+.tslegendspacer {
+    padding: 15px;
+    display: inline;
+}
+.tscenter {
+    width: 100%;
+    text-align: center;
+}
+
+.x-panel .x-grid-body .noborder
+{
+    border-width: 0px!important;
+}
+
+.absolute-cell-inner > .x-grid-cell-inner-treecolumn {
+    position: absolute !important;
+}
+.x-grid-row {
+    position: relative !important;
+}
+
+.x-column-header-text {
+    font-size: 12px!important;
+}
+
+.grouped-row .x-grid-cell {
+    background-color: #D6D6D6;
+    border-bottom-width:1px!important;
+    border-bottom-color: #E6E6E6;
+}
+
+.included-task .x-grid-cell{
+    background-color: #E7E6B6!important;
+}
+
+.missing-task-estimates {
+    width: 0;
+    height: 0;
+    border-top: 7px solid #EE1C25;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.warning {
+    color: #FAD200;
+}
+
+.defined{
+    color: #FBB990;
+}
+.inprogress{
+    color:#7CAFD7;
+}
+.completed{
+    color:#8DC63F;
+}
+    </style>
+
+</head>
+<body></body>
+</html>
